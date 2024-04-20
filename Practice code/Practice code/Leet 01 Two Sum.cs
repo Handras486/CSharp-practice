@@ -45,5 +45,22 @@ namespace Practice_code
 
             return null;
         }
+
+        public static int[] TwoSumHashSet(int[] nums, int target)
+        {
+            HashSet<int> checkedNums = new HashSet<int>();
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (checkedNums.Contains(target - nums[i]))
+                {
+                    return new int[] { nums[i], target };
+                }
+                else
+                {
+                    checkedNums.Add(nums[i]);
+                }
+            }
+            return null;
+        }
     }
 }

@@ -92,7 +92,29 @@ namespace Practice_code
             }
             max = Math.Max(max, hSet.Count);
             return max;
+        }
 
+        public static int LengthOfLongestSubstringSlidingWindow(string s)
+        {
+            Dictionary<char, int> letters = new Dictionary<char, int>();
+            int max = 0;
+            int left = 0;
+            int right;
+
+            for (right = 0; right < s.Length; right++)
+            {
+                char c = s[right];
+
+                if (letters.ContainsKey(c))
+                {
+                    left = Math.Max(left, letters[c] + 1);
+                }
+
+                letters[c] = right;
+
+                max = Math.Max(max, right - left + 1);
+            }
+            return max;
         }
     }
 }

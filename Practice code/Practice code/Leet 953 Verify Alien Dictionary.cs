@@ -8,7 +8,7 @@ namespace Practice_code
 {
     internal class Leet_953_Verify_Alien_Dictionary
     {
-        public static bool IsAlienSorted(string[] words, string order)
+        internal static bool IsAlienSorted(string[] words, string order)
         {
             for (int i = 0; i < words.Length - 1; i++)
             {
@@ -35,7 +35,7 @@ namespace Practice_code
             return true;
         }
 
-        public static bool IsAlienSortedDictionary(string[] words, string order)
+        internal static bool IsAlienSortedDictionary(string[] words, string order)
         {
             Dictionary<char, int> ordermap = order.ToDictionary(x => x, x => order.IndexOf(x)) ;
 

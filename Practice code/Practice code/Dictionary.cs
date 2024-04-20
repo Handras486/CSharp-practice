@@ -41,6 +41,8 @@ namespace Practice_code
             if (dictionary.TryGetValue(new Hallgato(), out értékNemLeszBenne))
                 Console.WriteLine(értékNemLeszBenne);
 
+            dictionary.ContainsKey(h1);
+
             h2.Név = "Józsi";
             Console.WriteLine(dictionary[h1]);
             Console.WriteLine(dictionary[h2]);
