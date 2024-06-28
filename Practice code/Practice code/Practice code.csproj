@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dictionary.cs" />
+    <Compile Include="DiscountCalculator.cs" />
     <Compile Include="Leet 01 Two Sum.cs" />
     <Compile Include="Leet 03 LongestSubstringNoRepeat.cs" />
     <Compile Include="Leet 05 Longest Palindromic Substring.cs" />
@@ -51,6 +52,7 @@
     <Compile Include="Leet 269 Alien Dictionary.cs" />
     <Compile Include="Leet 36 Valid Sudoku.cs" />
     <Compile Include="Leet 953 Verify Alien Dictionary.cs" />
+    <Compile Include="MalwareAnalysis.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

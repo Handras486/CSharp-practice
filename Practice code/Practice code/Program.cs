@@ -12,6 +12,7 @@ namespace Practice_code
     {
         static void Main(string[] args)
         {
+            
             //int a = 11;
             //int b = a;
             //b = 12;
@@ -35,7 +36,7 @@ namespace Practice_code
 
             string s = "abba";
             int longestLengtht = Leet_03_LongestSubstringNoRepeat.LengthOfLongestSubstringSlidingWindow(s);
-            Console.WriteLine($"Longest Substring length: {longestLengtht}");
+            //Console.WriteLine($"Longest Substring length: {longestLengtht}");
 
             //string[] words = new string[] { "hrn", "hrf", "er", "enn", "rfnn" };
             //string result = Leet_269_Alien_Dictionary.AlienDictionary(words);
@@ -45,12 +46,12 @@ namespace Practice_code
             string order = "zkgwaverfimqxbnctdplsjyohu";
             //bool isOrdered = Leet_953_Verify_Alien_Dictionary.IsAlienSorted(words2, order);
             bool isOrdered = Leet_953_Verify_Alien_Dictionary.IsAlienSortedDictionary(words2, order);
-            Console.WriteLine(isOrdered);
+            //Console.WriteLine(isOrdered);
 
             IList<string> combinations = Leet_17_Phone_Number_Letter_Combinations.LetterCombinations("23");
             foreach (string combination in combinations)
             {
-                Console.WriteLine(combination);
+                //Console.WriteLine(combination);
             }
 
             char[][] board = new char[][]
@@ -65,8 +66,15 @@ namespace Practice_code
             ,new char[] {'.', '.', '.', '4', '1', '9', '.', '.', '5'}
             ,new char[] {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
             };
-            Console.WriteLine(Leet_36_Valid_Sudoku.IsValidSudoku(board));
-            
+            //Console.WriteLine(Leet_36_Valid_Sudoku.IsValidSudoku(board));
+
+            //TestDome
+
+            //Console.WriteLine(MegaStore.GetDiscountedPrice(12, 100, MegaStore.DiscountType.Weight));
+
+            int[] records = new int[] { 1, 2, 0, 5, 0, 2, 4, 3, 3, 3 };
+            var result = MalwareAnalysis.Simulate(records);
+            Console.WriteLine(string.Join(", ", result));
 
             Console.ReadLine();
         }
