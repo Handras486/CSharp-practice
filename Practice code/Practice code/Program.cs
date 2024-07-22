@@ -73,8 +73,12 @@ namespace Practice_code
             //Console.WriteLine(MegaStore.GetDiscountedPrice(12, 100, MegaStore.DiscountType.Weight));
 
             int[] records = new int[] { 1, 2, 0, 5, 0, 2, 4, 3, 3, 3 };
-            var result = MalwareAnalysis.Simulate(records);
-            Console.WriteLine(string.Join(", ", result));
+            //var result = MalwareAnalysis.Simulate(records);
+            //Console.WriteLine(string.Join(", ", result));
+
+            FizzBuzzTest.FizzBuzz();
+
+            Singleton.GetSingleton();
 
             Console.ReadLine();
         }

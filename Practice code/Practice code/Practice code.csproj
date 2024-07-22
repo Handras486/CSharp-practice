@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Dictionary.cs" />
     <Compile Include="DiscountCalculator.cs" />
+    <Compile Include="FizzBuzzTest.cs" />
     <Compile Include="Leet 01 Two Sum.cs" />
     <Compile Include="Leet 03 LongestSubstringNoRepeat.cs" />
     <Compile Include="Leet 05 Longest Palindromic Substring.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="MalwareAnalysis.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Singleton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
